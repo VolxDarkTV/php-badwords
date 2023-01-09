@@ -36,10 +36,9 @@
   <!-- Paragrafo -->
   <p>
     <?php
-    
+
       $replaceMyText = '';
-      $paragraph = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dicta laudantium error facere laboriosam nemo voluptate libero omnis, blanditiis incidunt quis officia rerum voluptates, temporibus numquam non vero. Voluptatem, impedit?';
-      echo $paragraph . $risultato=str_replace($_GET['replaceMyText'],"***",$paragraph);
+      echo $risultato=str_replace($_GET['replaceMyText'],"***",$paragraph);
       
     ?>
   
