@@ -25,21 +25,54 @@
   <span>
     Lunghezza Paragrafo:
     <?php
-    echo strlen($paragraph) . ' caratteri';
+      echo strlen($paragraph) . ' caratteri';
     ?>
   </span>
   
 </div>
 
-<!-- Risultato -->
+<!-- Risultato v1.0 -->
 <div>
   <!-- Paragrafo -->
   <p>
     <?php
 
-      $replaceMyText = '';
-      echo $risultato=str_replace($_GET['replaceMyText'],"***",$paragraph);
+      // $replaceMyText = '';
+      echo $risultato = str_replace($_GET['replaceMyText'], "***", $paragraph);
       
+    ?>
+  
+  </p>
+</div>
+
+<!-- Risultato v2.0 -->
+<div>
+  <!-- Paragrafo -->
+  <p>
+    <?php
+
+      $replaceMyText = 'ipsum';
+      echo $risultato=str_replace($_GET = $replaceMyText, '***', $paragraph);
+      
+    ?>
+  
+  </p>
+</div>
+
+<!-- Risultato v3.0 -->
+<div>
+  <form method="post">
+    Inserisci il tuo indirizzo email<br>
+    <input type="text" name="email"><br>
+    <input type="submit" value="Invia Modulo">
+  </form>
+  <!-- Paragrafo -->
+  <p>
+    <?php
+
+      $email = $_POST['email'];
+      echo $risultato = str_replace($_GET = $email, '***', $paragraph);
+
     ?>
   
   </p>
