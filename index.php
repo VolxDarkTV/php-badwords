@@ -71,7 +71,7 @@
     <?php
 
       $badword = $_POST['badword'];
-      echo $risultato = str_replace($_GET = $badword, '***', $paragraph);
+      echo $risultato = str_replace($badword, '***', $paragraph);
 
     ?>
   
