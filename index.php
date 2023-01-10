@@ -62,16 +62,16 @@
 <!-- Risultato v3.0 -->
 <div>
   <form method="post">
-    Inserisci il tuo indirizzo email<br>
-    <input type="text" name="email"><br>
+    Bad Word<br>
+    <input type="text" name="badword" placeholder="search BadWord"><br>
     <input type="submit" value="Invia Modulo">
   </form>
   <!-- Paragrafo -->
   <p>
     <?php
 
-      $email = $_POST['email'];
-      echo $risultato = str_replace($_GET = $email, '***', $paragraph);
+      $badword = $_POST['badword'];
+      echo $risultato = str_replace($_GET = $badword, '***', $paragraph);
 
     ?>
   
